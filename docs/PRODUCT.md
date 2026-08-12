@@ -1,8 +1,8 @@
 # ARLO — PRODUCT & BRAND DIRECTION
 
 **Status:** Working Direction  
-**Version:** 0.2  
-**Date:** 11 August 2026
+**Version:** 1.0  
+**Date:** 12 August 2026
 
 ---
 
@@ -10,11 +10,13 @@
 
 **Name:** Arlo
 
-Arlo is a minimalist list and task app built around a simple idea:
+Arlo is a minimalist list and task app built around one idea:
 
 > **Write naturally. Arlo sorts the rest.**
 
-The user should not feel like they are operating a productivity system. They simply write what is on their mind, and Arlo quietly turns it into something useful.
+The user should not feel like they are operating a productivity system.
+
+They simply put something into Arlo, and Arlo quietly turns it into something useful.
 
 Arlo should feel less like a traditional task manager and more like a beautifully designed place to put things that need doing.
 
@@ -30,40 +32,59 @@ Arlo should feel less like a traditional task manager and more like a beautifull
 
 > **Sort it with Arlo.**
 
-Together:
-
-> **Lists done right.**  
-> **Sort it with Arlo.**
-
 The branding should remain short, confident and memorable.
 
-The product should not rely on phrases such as "AI-powered productivity" to explain its value. The AI should be experienced rather than advertised.
+Arlo should not depend on phrases such as "AI-powered productivity" to communicate its value.
+
+The intelligence should primarily be experienced through the product.
 
 ---
 
-## 3. What Arlo Is
-
-Arlo is a simple surface for capturing things.
-
-The user can write:
-
-> finish video by Friday
-
-> go shopping
-
-> clean living room
-
-> call John tomorrow at 4
-
-Arlo interprets the input and turns it into useful entries without requiring forms, fields or complicated task creation.
+## 3. Core Promise
 
 The fundamental promise is:
 
 > **Tell Arlo what needs doing. It figures out the structure.**
 
+A user can write:
+
+> finish video by Friday
+
+Arlo can turn this into:
+
+**Finish video**  
+Friday
+
+The user should not need to manually select dates, create fields or configure a task.
+
 ---
 
-## 4. Product Personality
+## 4. Product Philosophy
+
+### Complexity underneath. Simplicity on top.
+
+Arlo may manage significant information underneath the interface.
+
+The user should only see information when it is useful.
+
+A task may eventually contain:
+
+- Date
+- Time
+- Reminder
+- Location
+- Notes
+- Items
+- Priority
+- Recurrence
+- AI interpretation
+- Completion information
+
+None of this means the primary interface should become complicated.
+
+---
+
+## 5. Product Personality
 
 Arlo should feel:
 
@@ -88,308 +109,13 @@ Arlo should not feel:
 - Heavily gamified
 - Obsessed with AI
 
-Arlo's personality should mostly come through **interaction design, motion and concise language**, not constant conversation.
+Personality should primarily come through interaction, motion and concise language.
 
 ---
 
-## 5. Core Product Philosophy
+## 6. Core Experience
 
-### Complexity underneath. Simplicity on top.
-
-The visible interface should be extremely simple even when Arlo is managing significant information underneath.
-
-A visible task could be:
-
-> **Go shopping**
-
-while its underlying metadata contains:
-
-- Items
-- Date
-- Time
-- Reminder
-- Location
-- Notes
-- Priority
-- Recurrence
-- AI interpretation
-- Completion information
-
-The user should only see information when it is useful.
-
----
-
-# 6. The Home Screen
-
-The home screen should be almost ridiculously simple.
-
-Conceptually:
-
-                         ⚙
-
-Today
-
-Finish video
-Friday
-
-Go shopping        ?
-
-Clean living room
-
-Call John
-4:00 PM
-
-
-────────────────────────
-
-What's on your mind?
-
-The exact layout is still to be designed.
-
-The important rule is:
-
-> **The list is the product.**
-
-Avoid turning the home screen into a dashboard.
-
-Do not fill it with:
-
-- Statistics
-- Motivational quotes
-- Productivity scores
-- Large AI controls
-- Unnecessary cards
-- Feature menus
-- Promotional content
-
-The user should open Arlo and immediately see their things.
-
----
-
-# 7. Natural-Language Capture
-
-Natural-language input is central to Arlo.
-
-Users should be able to write naturally rather than learn a task syntax.
-
-Examples:
-
-> finish video by Friday
-
-Arlo produces:
-
-**Finish video**  
-Friday
-
----
-
-> call mum tomorrow afternoon
-
-Arlo identifies the task and approximate timing.
-
----
-
-> remember to send the invoice after the meeting
-
-Arlo can preserve the contextual information rather than forcing the user to manually structure it.
-
----
-
-> things I need before holiday: passport, insurance, charger
-
-Arlo can recognise that the input contains multiple actionable items.
-
-The interface should make the user feel like they are **writing**, not entering data.
-
----
-
-# 8. AI Behaviour
-
-Arlo's AI should work quietly in the background.
-
-## Level 1 — Understand
-
-Interpret the user's natural language.
-
-Example:
-
-> finish video by Friday
-
-Becomes:
-
-- Task: Finish video
-- Due: Friday
-
-## Level 2 — Enrich
-
-Extract useful metadata already contained in the user's input.
-
-Possible metadata:
-
-- Date
-- Time
-- Reminder
-- Location
-- Items
-- Notes
-- Priority
-- Recurrence
-
-## Level 3 — Clarify
-
-Ask a question only when the missing information is genuinely useful.
-
-Example:
-
-> **Go shopping** `?`
-
-The indicator tells the user Arlo wants clarification.
-
-Opening it reveals:
-
-> **What do you need to buy?**
-
-User:
-
-> Oranges, toilet roll, chicken.
-
-Arlo updates the task's underlying information.
-
-The visible task remains:
-
-> **Go shopping**
-
-This is an important product behaviour.
-
-### Minimum necessary clarification
-
-Arlo should never turn a quick task into a form.
-
-It should ask one useful question at a time.
-
-It should also never invent details simply to make a task appear complete.
-
----
-
-# 9. AI Should Stay Out of the Way
-
-Arlo is not intended to become an AI chat application.
-
-There should not be a large chat interface.
-
-There should not be a persistent AI conversation.
-
-There should not be constant "AI-generated" labels.
-
-The user should mostly experience:
-
-> **Write → Arlo understands → continue**
-
-The intelligence should disappear behind the simplicity.
-
----
-
-# 10. Task Details
-
-The main list remains minimal.
-
-Opening a task can reveal additional information such as:
-
-- Date
-- Time
-- Reminder
-- Notes
-- Items
-- Location
-- Priority
-- Recurrence
-- Creation date
-- Completion information
-- AI interpretation where useful
-
-The detailed view exists for people who want more information.
-
-The primary list does not.
-
----
-
-# 11. Task Completion
-
-Traditional checkboxes are not the desired interaction.
-
-We should experiment with a gesture-based completion interaction.
-
-Potential directions:
-
-- Swipe
-- Drag
-- Flick
-- Tap-and-hold
-- Another tactile gesture
-
-The final choice should be determined through prototyping.
-
-The important requirement is that completion should feel **physical, immediate and satisfying**.
-
----
-
-# 12. Completion Animation
-
-The completion sequence is a major part of Arlo's personality.
-
-Conceptually:
-
-1. The user's gesture moves the task.
-2. The task responds immediately.
-3. Text becomes increasingly transparent.
-4. The task subtly contracts/recedes.
-5. The task fades away.
-6. Remaining tasks naturally settle into the available space.
-7. A small completion counter can appear.
-
-Example:
-
-> **1 done**
-
-Then:
-
-> **2 done**
-
-The counter should be understated rather than gamified.
-
-When everything is completed:
-
-> **All clear.**
-
-The empty screen should feel like a reward.
-
----
-
-# 13. Completed Tasks
-
-Completed tasks should not necessarily be permanently deleted.
-
-They should disappear from the primary experience.
-
-A gesture, control or future setting can reveal completed tasks.
-
-For example:
-
-✓ Clean living room  
-✓ Call John  
-✓ Send invoice
-
-The default view should prioritise what still needs attention.
-
-The philosophy is:
-
-> **Completed work should create space, not clutter.**
-
----
-
-# 14. The Emotional Loop
-
-Arlo is designed around:
+The core loop is:
 
 > **Think → Write → Understand → Clarify → Do → Clear**
 
@@ -401,116 +127,260 @@ The user puts something into Arlo.
 
 They do it.
 
-It disappears.
+It disappears from their active workload.
 
 There is now more visual and mental space.
 
-The interface should communicate:
+---
 
-> **That's dealt with.**
+## 7. Home Screen
+
+The home screen should remain extremely simple.
+
+The primary content is the user's active list.
+
+It should not become a dashboard.
+
+Avoid filling the home screen with:
+
+- Statistics
+- Productivity scores
+- Motivational quotes
+- Large AI controls
+- Feature menus
+- Promotional content
+- Unnecessary cards
+
+The principle is:
+
+> **The list is the product.**
 
 ---
 
-# 15. Pages — The Evolution of the OnePage Idea
+## 8. Natural-Language Capture
+
+Natural-language input is central to Arlo.
+
+Users should be able to write naturally:
+
+> finish video by Friday
+
+> go shopping
+
+> clean living room
+
+> call John tomorrow at 4
+
+Arlo should interpret useful information already contained in the input.
+
+The user should feel like they are writing rather than completing a form.
+
+---
+
+## 9. AI Behaviour
+
+Arlo's AI should work quietly in the background.
+
+### Understand
+
+Interpret natural language.
+
+Example:
+
+> finish video by Friday
+
+Becomes:
+
+- Task: Finish video
+- Due: Friday
+
+### Enrich
+
+Extract useful information already present in the user's input.
+
+Possible information includes:
+
+- Dates
+- Times
+- Locations
+- People
+- Items
+- Notes
+- Recurrence
+- Other useful context
+
+### Clarify
+
+Ask a question only when additional information is genuinely useful.
+
+Example:
+
+> **Go shopping** `?`
+
+The user can provide the missing information naturally.
+
+### Minimum Necessary Clarification
+
+Arlo should ask one useful question at a time.
+
+It should never turn a simple task into a form.
+
+It must not invent information simply to make a task appear complete.
+
+---
+
+## 10. AI Should Stay Out of the Way
+
+Arlo is not an AI chat application.
+
+There should not be:
+
+- A large chat interface
+- A persistent AI conversation
+- Constant "AI-generated" labels
+- A prominent AI dashboard
+
+The intended experience is:
+
+> **Write → Arlo understands → continue**
+
+The intelligence should disappear behind the simplicity.
+
+---
+
+## 11. Task Details
+
+The primary list should remain minimal.
+
+Opening or expanding a task may eventually reveal additional information such as:
+
+- Date
+- Time
+- Reminder
+- Notes
+- Items
+- Location
+- Priority
+- Recurrence
+- Completion information
+- Useful AI context
+
+The detailed view exists for people who want more information.
+
+The primary list does not need to show it all.
+
+---
+
+## 12. Task Completion
+
+Traditional checkboxes are not the desired primary interaction.
+
+Arlo should use a physical gesture-based completion interaction.
+
+The final interaction is defined by the current design and milestone documentation.
+
+The important product requirement is that completion should feel:
+
+- Physical
+- Immediate
+- Responsive
+- Predictable
+- Satisfying
+
+Completing something should feel better than simply ticking a box.
+
+---
+
+## 13. Completed Work
+
+Completed tasks should leave the primary experience without being permanently deleted.
+
+The active list should become cleaner as work is completed.
+
+The philosophy is:
+
+> **Completed work should create space, not clutter.**
+
+Completed work should remain recoverable.
+
+Undo should provide a simple recovery path.
+
+---
+
+## 14. Pages
 
 The original concept was a single minimal page.
 
-The product can evolve beyond that without losing the philosophy.
-
-Arlo can eventually contain multiple **Pages**.
+Arlo can eventually expand into multiple **Pages** without losing its philosophy.
 
 A Page is simply a space with a purpose.
 
-Potential future page types:
+Potential future types include:
 
 - Simple List
-- AI-Assisted List
-- Shopping List
+- Shopping
 - Notes
 - Ideas
 - Planning
 - Projects
 - Packing
-- Other specialised lists
+- AI-Assisted Lists
 
-These should not all be built initially.
-
-The important concept is that different pages can have different behaviours while retaining the same simple Arlo interface.
+These are future directions, not current implementation requirements.
 
 ---
 
-# 16. Page Navigation
+## 15. Page Philosophy
 
-Navigation should remain secondary to the current list.
+Creating a page should eventually require almost no configuration.
 
-A minimal sidebar, drawer or gesture-based page switcher could expose:
-
-Pages
-
-Today  
-Shopping  
-Ideas  
-Notes
-
-+ New Page
-
-The user should spend most of their time inside the current page.
-
-There should be no need for a traditional dashboard just to navigate between lists.
-
----
-
-# 17. Creating Pages
-
-Creating a page should require almost no configuration.
-
-Instead of presenting a long setup form, Arlo can ask:
+Instead of presenting a long setup form, Arlo could ask:
 
 > **What is this page for?**
 
-User:
+The user might write:
 
 > stuff I need to buy
 
-Arlo suggests:
+Arlo could suggest:
 
 > **Shopping**
->
-> A list for things you need to buy.
 
-The user confirms.
+The user confirms and the page exists.
 
-The page exists.
-
-This follows the wider philosophy:
+This follows the wider principle:
 
 > **Tell Arlo what you want. Arlo figures out the structure.**
 
 ---
 
-# 18. Product Scope
+## 16. Initial Product Scope
 
-The first version should prove the core interaction rather than attempt to become a complete productivity platform.
+The first version exists to prove the core interaction.
 
-### Initial focus
+The initial experience focuses on:
 
-- Minimal home/list screen
+- Minimal task list
 - Natural-language task capture
-- AI interpretation
-- Basic dates and metadata
-- AI clarification questions
-- Task detail view
-- Satisfying completion gesture
-- Fade/disappear completion animation
-- Completed-task counter
-- Ability to reveal completed tasks
-- Basic Settings
-- Light Mode
-- Dark Mode
+- Local task creation
+- Task interpretation
+- AI question concepts
+- Task enrichment concepts
+- Physical completion gesture
+- Completion animation
+- Completed tasks
+- Undo
+- Light and dark themes
+- Basic Settings entry point
 
-### Do not build initially
+The first milestone should not attempt to become a complete productivity platform.
 
-- Every page type
+---
+
+## 17. Explicitly Out of Initial Scope
+
+Do not initially build:
+
 - Complex project management
 - Large statistics systems
 - Gamification
@@ -518,81 +388,59 @@ The first version should prove the core interaction rather than attempt to becom
 - Complex dashboards
 - Extensive personalisation
 - Advanced AI chat
-- Every possible reminder/workflow feature
+- Every possible reminder workflow
+- Accounts
+- Cloud synchronisation
+- Calendar integrations
+- Widgets
+- Subscription systems
 
-The core loop needs to be excellent before the product expands.
+These may be considered later if they support the product philosophy.
 
 ---
 
-# 19. Visual Identity
+## 18. Visual Identity
 
 Arlo should use a restrained, modern visual identity.
 
-Avoid the generic visual language frequently associated with AI applications:
+Avoid generic AI visual language such as:
 
 - Excessive gradients
 - Neon effects
 - Constant sparkle effects
 - Robot imagery
-- Overly futuristic interfaces
+- Futuristic interfaces
 - Dense dashboards
 - Excessive cards
 - Visual clutter
 
-The interface should feel like a **beautiful digital surface**.
+The interface should feel like a beautiful digital surface.
 
 Whitespace, typography, colour and motion should do most of the work.
 
 ---
 
-# 20. Colour System
+## 19. Theme Direction
 
-The initial visual direction is deliberately specific.
+### Light
 
-## Light Mode
+Warm beige / cream surface with restrained typography and sky-blue accent.
 
-**Surface:** Beige / cream
+### Dark
 
-**Primary text:** White
+Deep navy surface with restrained light typography and sky-blue accent.
 
-**Accent:** Sky blue
-
-The exact shades will be determined during design and testing.
-
-The light theme should feel warm and distinctive rather than like a generic white productivity app.
-
-## Dark Mode
-
-**Surface:** Dark navy
-
-**Accent:** Sky blue
-
-Supporting text colours should be selected for readability while preserving the restrained aesthetic.
-
-## Future User Customisation
-
-The user should eventually be able to customise the visual theme from Settings.
-
-Potential controls:
-
-- Light / Dark mode
-- Surface colour
-- Accent colour
-- Curated theme presets
-
-V1 should not overbuild this.
-
-The initial Arlo theme should be the default experience.
+The exact design tokens belong in `DESIGN.md`.
 
 ---
 
-# 21. Typography
+## 20. Typography Direction
 
-Typography is a major component of the brand.
+Typography is a major part of Arlo's identity.
 
-We should deliberately avoid defaulting to **Manrope** or **Inter** simply because they are common recommendations from AI tools.
+Do not default to Inter or Manrope simply because they are common recommendations.
 
-The initial typeface should be chosen because it fits Arlo.
+The typeface should be selected because it fits Arlo.
 
 Desired characteristics:
 
@@ -603,103 +451,17 @@ Desired characteristics:
 - Good numerals
 - Good punctuation
 - Excellent mobile rendering
-- Suitable for both light and dark themes
+- Suitable for light and dark themes
 
-## Future Font Selection
-
-A future version may allow users to choose a font.
-
-This should be a curated selection rather than an unrestricted font system.
-
-The goal is to give users personal choice while keeping Arlo visually coherent.
-
-Font customisation is a future enhancement, not a V1 requirement.
+Future curated font selection may be considered.
 
 ---
 
-# 22. Animation Language
-
-Animation is one of the areas where Arlo should differentiate itself.
-
-However:
-
-> **Arlo should not animate everything just because it can.**
-
-Every animation should communicate something or make an interaction feel better.
-
-Motion should feel:
-
-- Soft
-- Physical
-- Responsive
-- Fast
-- Natural
-- Satisfying
-- Intentional
-
-Important motion states include:
-
-### Task creation
-
-A new task enters the list naturally.
-
-### AI clarification
-
-The question indicator appears subtly.
-
-### Question opening
-
-The clarification state expands without feeling like a modal interruption.
-
-### Completion
-
-The task fades, contracts and disappears.
-
-### List rearrangement
-
-Remaining tasks settle naturally rather than jumping.
-
-### Page navigation
-
-Pages transition smoothly.
-
-### Completed tasks
-
-Completed content moves into a secondary state.
-
----
-
-# 23. Satisfying Interaction
-
-Arlo should not rely on conventional gamification.
-
-The interaction itself should be rewarding.
-
-Potential ingredients:
-
-- Tactile completion gestures
-- Subtle haptic feedback
-- Responsive text
-- Natural movement
-- Carefully timed fading
-- Small state transitions
-- Progressive clearing of the screen
-
-The intended feeling is:
-
-> **I did something → Arlo responded beautifully.**
-
-Not:
-
-> **I earned 50 productivity points.**
-
----
-
-# 24. Arlo's Voice
+## 21. Voice
 
 Arlo should communicate like a smart, concise person.
 
-### Prefer
+Prefer:
 
 > **What do you need to buy?**
 
@@ -709,25 +471,15 @@ Arlo should communicate like a smart, concise person.
 
 > **All clear.**
 
-> **That's everything.**
-
-### Avoid
+Avoid:
 
 > "I've detected that your task requires additional contextual information."
-
-> "Congratulations! You have successfully completed your task."
-
-> "Would you like me to optimise your productivity workflow?"
 
 Arlo should never sound like a corporate AI assistant.
 
 ---
 
-# 25. The Arlo Principle
-
-The central design rule should be:
-
-> **Remove friction rather than add productivity features.**
+## 22. Product Principle
 
 Every feature should be challenged with:
 
@@ -735,17 +487,17 @@ Every feature should be challenged with:
 
 If not, it should be questioned.
 
-Arlo's advantage should come from **removing work from the user**, not adding features they have to manage.
+Arlo's advantage should come from removing work from the user rather than giving them more features to manage.
 
 ---
 
-# 26. Brand in One Sentence
+## 23. Brand in One Sentence
 
 > **Arlo is a minimal list app that lets you write naturally, intelligently turns your thoughts into useful tasks, and makes completing them feel effortless and satisfying.**
 
 ---
 
-# 27. Brand Snapshot
+## 24. Brand Snapshot
 
 **Name:** Arlo
 
@@ -759,13 +511,11 @@ Arlo's advantage should come from **removing work from the user**, not adding fe
 
 **Core experience:** Minimal surface + natural language + intelligent assistance + satisfying completion.
 
-**Light theme:** Beige/cream surface + white text + sky-blue accent.
+**Light theme:** Warm beige/cream + restrained typography + sky-blue accent.
 
-**Dark theme:** Dark navy surface + sky-blue accent.
+**Dark theme:** Deep navy + restrained light typography + sky-blue accent.
 
-**Typography:** Distinctive typeface selected specifically for Arlo; avoid defaulting to Manrope or Inter.
-
-**Future typography:** Curated user-selectable fonts.
+**Typography:** Distinctive typeface selected specifically for Arlo.
 
 **Motion:** Soft, physical, responsive and purposeful.
 
@@ -774,7 +524,3 @@ Arlo's advantage should come from **removing work from the user**, not adding fe
 **Central philosophy:**
 
 > **Complexity underneath. Simplicity on top.**
-
-**Product loop:**
-
-> **Think → Write → Understand → Clarify → Do → Clear**
