@@ -564,3 +564,76 @@ prefer less interface when both achieve the same outcome.
 ## 27. Core Engineering Principle
 
 > **Build only what is needed. Make it excellent. Then build the next thing.**
+
+---
+
+## 28. GitHub as Project Source of Truth
+
+The GitHub repository is the persistent source of truth for the Arlo project.
+
+Repository:
+
+`prodbycjbeatsss/project-arlo`
+
+The repository contains both the current implementation and the current project documentation.
+
+When working on Arlo, AI assistants with access to the connected repository should inspect the repository directly rather than relying on copied or remembered versions of files.
+
+### Documentation
+
+The primary project documentation is located in:
+
+```text
+docs/
+├── PRODUCT.md
+├── DESIGN.md
+├── ROADMAP.md
+├── MILESTONE-1.md
+├── DEVELOPMENT.md
+└── CHANGELOG.md
+
+AI may update repository files directly when the user explicitly asks it to do so.
+When making direct GitHub changes:
+Read the current version of the file first.
+Make the smallest appropriate change.
+Preserve unrelated content.
+Use a clear commit message.
+Do not modify additional files without a reason.
+Report exactly what was changed.
+Local Device vs GitHub
+The local project on the Android device and the GitHub repository should normally represent the same project state.
+The local project is where the application is run and tested.
+GitHub is the persistent project record.
+After stable development work:
+Local project
+     ↓
+Test on Android
+     ↓
+Commit
+     ↓
+Push
+     ↓
+GitHub becomes the latest recorded state
+If the local project and GitHub differ, do not assume which version is correct.
+Inspect the differences before overwriting or reverting anything.
+New Chat Sessions
+A new AI conversation should not require the user to paste the entire project documentation again.
+When repository access is available, the AI should establish context by inspecting:
+The repository structure.
+The current documentation.
+The active roadmap stage.
+The relevant source files.
+Recent commits when useful.
+The user can therefore refer to project files by name, for example:
+"Review ROADMAP.md against the current implementation."
+or:
+"Continue Milestone 1 from where we left off."
+The AI should inspect the repository before making assumptions about the current state.
+Documentation Consistency
+GitHub should be treated as the canonical version of project documentation.
+If a conversation contains information that conflicts with the repository:
+Check the repository first.
+Identify the conflict.
+Do not silently overwrite documented decisions.
+Ask for clarification when the correct direction cannot be determined from the project.
+The goal is to prevent project knowledge from becoming dependent on a single conversation.
