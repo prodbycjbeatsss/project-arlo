@@ -127,10 +127,82 @@ function ArloStatus({
   return null;
 }
 
+function AnimatedTaskTitle({
+  title,
+}: {
+  title: string;
+}) {
+  const characters = React.useMemo(
+    () => Array.from(title),
+    [title],
+  );
+
+  const values = React.useRef(
+    characters.map(() => ({
+      y: new Animated.Value(14),
+      opacity: new Animated.Value(0),
+    })),
+  ).current;
+
+  React.useEffect(() => {
+    values.forEach((item) => {
+      item.y.setValue(14);
+      item.opacity.setValue(0);
+    });
+
+    const animations = values.map(
+      (item, index) =>
+        Animated.parallel([
+          Animated.timing(item.y, {
+            toValue: 0,
+            duration: 420,
+            delay: index * 45,
+            useNativeDriver: true,
+          }),
+
+          Animated.timing(item.opacity, {
+            toValue: 1,
+            duration: 300,
+            delay: index * 45,
+            useNativeDriver: true,
+          }),
+        ]),
+    );
+
+    Animated.parallel(animations).start();
+  }, [values]);
+
+  return (
+    <View style={styles.animatedTitle}>
+      {characters.map((character, index) => (
+        <Animated.Text
+          key={`${character}-${index}`}
+          numberOfLines={1}
+          style={[
+            styles.taskTitleCharacter,
+            {
+              opacity: values[index].opacity,
+              transform: [
+                {
+                  translateY: values[index].y,
+                },
+              ],
+            },
+          ]}
+        >
+          {character}
+        </Animated.Text>
+      ))}
+    </View>
+  );
+}
+
 function TaskItem({
   task,
+  isNew,
 }: {
   task: Task;
+  isNew: boolean;
 }) {
   return (
     <View style={styles.task}>
@@ -142,27 +214,35 @@ function TaskItem({
             <View style={styles.staticBullet} />
           )}
 
-          <Text
-            numberOfLines={1}
-            ellipsizeMode="tail"
-            style={styles.taskTitle}
-          >
-            {task.title}
-          </Text>
+          {isNew ? (
+            <AnimatedTaskTitle title={task.title} />
+          ) : (
+            <Text
+              numberOfLines={1}
+              ellipsizeMode="tail"
+              style={styles.taskTitle}
+            >
+              {task.title}
+            </Text>
+          )}
         </View>
 
         <View style={styles.statusArea}>
           <ArloStatus state={task.arloState} />
         </View>
       </View>
-
-      <View style={styles.rule} />
     </View>
   );
 }
 
 export default function Home() {
   const [text, setText] = React.useState('');
+  const [tasks, setTasks] =
+    React.useState<Task[]>(SAMPLE_TASKS);
+
+  const [newTaskId, setNewTaskId] =
+    React.useState<string | null>(null);
+
   const inputRef = React.useRef<TextInput>(null);
 
   React.useEffect(() => {
@@ -175,6 +255,37 @@ export default function Home() {
     };
   }, []);
 
+  const createTask = React.useCallback(() => {
+    const title = text.trim();
+
+    if (!title) {
+      return;
+    }
+
+    const newTask: Task = {
+      id: Date.now().toString(),
+      title,
+      arloState: 'idle',
+    };
+
+    setTasks((currentTasks) => [
+      ...currentTasks,
+      newTask,
+    ]);
+
+    setNewTaskId(newTask.id);
+
+    setText('');
+
+    requestAnimationFrame(() => {
+      inputRef.current?.focus();
+    });
+
+    setTimeout(() => {
+      setNewTaskId(null);
+    }, 1100);
+  }, [text]);
+
   return (
     <SafeAreaView
       style={styles.safeArea}
@@ -182,7 +293,11 @@ export default function Home() {
     >
       <KeyboardAvoidingView
         style={styles.screen}
-        behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+        behavior={
+          Platform.OS === 'ios'
+            ? 'padding'
+            : undefined
+        }
       >
         <ScrollView
           contentContainerStyle={styles.content}
@@ -202,7 +317,8 @@ export default function Home() {
               hitSlop={10}
               style={({ pressed }) => [
                 styles.settingsButton,
-                pressed && styles.settingsButtonPressed,
+                pressed &&
+                  styles.settingsButtonPressed,
               ]}
             >
               <View style={styles.settingsDot} />
@@ -212,10 +328,11 @@ export default function Home() {
           </View>
 
           <View style={styles.taskArea}>
-            {SAMPLE_TASKS.map((task) => (
+            {tasks.map((task) => (
               <TaskItem
                 key={task.id}
                 task={task}
+                isNew={task.id === newTaskId}
               />
             ))}
 
@@ -225,13 +342,15 @@ export default function Home() {
                 value={text}
                 onChangeText={setText}
                 placeholder="What needs doing..."
-                placeholderTextColor={COLORS.tertiaryText}
-                multiline
+                placeholderTextColor={
+                  COLORS.tertiaryText
+                }
                 maxLength={500}
                 style={styles.input}
                 accessibilityLabel="What needs doing"
                 returnKeyType="done"
                 blurOnSubmit={false}
+                onSubmitEditing={createTask}
               />
             </View>
           </View>
@@ -276,7 +395,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 12,
     paddingVertical: 7,
     borderRadius: 999,
-    backgroundColor: 'rgba(35, 35, 32, 0.045)',
+    backgroundColor:
+      'rgba(35, 35, 32, 0.045)',
   },
 
   todayText: {
@@ -296,7 +416,8 @@ const styles = StyleSheet.create({
   },
 
   settingsButtonPressed: {
-    backgroundColor: 'rgba(35, 35, 32, 0.05)',
+    backgroundColor:
+      'rgba(35, 35, 32, 0.05)',
   },
 
   settingsDot: {
@@ -331,6 +452,23 @@ const styles = StyleSheet.create({
     flex: 1,
     minWidth: 0,
     paddingRight: 16,
+    color: COLORS.text,
+    fontSize: 13,
+    lineHeight: 19,
+    fontWeight: '500',
+    letterSpacing: -0.1,
+  },
+
+  animatedTitle: {
+    flex: 1,
+    minWidth: 0,
+    paddingRight: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+    overflow: 'hidden',
+  },
+
+  taskTitleCharacter: {
     color: COLORS.text,
     fontSize: 13,
     lineHeight: 19,
@@ -387,11 +525,6 @@ const styles = StyleSheet.create({
     letterSpacing: -0.1,
   },
 
-  rule: {
-    height: StyleSheet.hairlineWidth,
-    backgroundColor: COLORS.divider,
-  },
-
   composer: {
     minHeight: 34,
     marginTop: 1,
@@ -414,7 +547,8 @@ const styles = StyleSheet.create({
   completedSection: {
     marginTop: 18,
     paddingTop: 18,
-    borderTopWidth: StyleSheet.hairlineWidth,
+    borderTopWidth:
+      StyleSheet.hairlineWidth,
     borderTopColor: COLORS.divider,
   },
 
@@ -423,6 +557,5 @@ const styles = StyleSheet.create({
     fontSize: 13,
     lineHeight: 19,
     fontWeight: '500',
-    letterSpacing: -0.1,
   },
 });
