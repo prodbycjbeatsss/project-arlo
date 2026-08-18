@@ -1,0 +1,657 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "Arlo semantic design tokens. UI roles reference foundational values defined in primitives.json.",
+
+  "color": {
+    "background": {
+      "default": {
+        "$type": "color",
+        "$description": "Primary Arlo application canvas.",
+        "$value": "{color.neutral.100}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$description": "Subtle background tint used to distinguish supporting areas from the main canvas.",
+        "$value": "{color.neutral.100}"
+      },
+      "muted": {
+        "$type": "color",
+        "$description": "Muted background used for disabled or low-emphasis areas.",
+        "$value": "{color.neutral.200}"
+      },
+      "accent": {
+        "$type": "color",
+        "$description": "Brand-tinted background used for subtle interactive or AI-related emphasis.",
+        "$value": "{color.primary.50}"
+      }
+    },
+
+    "surface": {
+      "default": {
+        "$type": "color",
+        "$description": "Default contained surface used above the application canvas.",
+        "$value": "{color.neutral.50}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$description": "Low-contrast surface for secondary containment.",
+        "$value": "{color.neutral.100}"
+      },
+      "raised": {
+        "$type": "color",
+        "$description": "Raised surface used when additional hierarchy is required.",
+        "$value": "{color.neutral.50}"
+      },
+      "accent": {
+        "$type": "color",
+        "$description": "Brand-tinted surface for subtle primary or AI emphasis.",
+        "$value": "{color.primary.50}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$description": "Soft lavender surface used for secondary emphasis.",
+        "$value": "{color.secondary.50}"
+      }
+    },
+
+    "text": {
+      "default": {
+        "$type": "color",
+        "$description": "Primary application text.",
+        "$value": "{color.neutral.950}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$description": "Secondary supporting text.",
+        "$value": "{color.neutral.700}"
+      },
+      "muted": {
+        "$type": "color",
+        "$description": "Low-emphasis text such as metadata and placeholders.",
+        "$value": "{color.neutral.500}"
+      },
+      "disabled": {
+        "$type": "color",
+        "$description": "Text used for disabled controls and unavailable content.",
+        "$value": "{color.neutral.400}"
+      },
+      "inverse": {
+        "$type": "color",
+        "$description": "Text used on dark or strong coloured surfaces.",
+        "$value": "{color.neutral.50}"
+      },
+      "brand": {
+        "$type": "color",
+        "$description": "Primary brand text used where stronger brand emphasis is appropriate.",
+        "$value": "{color.primary.700}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$description": "Secondary lavender text used for supporting emphasis.",
+        "$value": "{color.secondary.700}"
+      }
+    },
+
+    "border": {
+      "default": {
+        "$type": "color",
+        "$description": "Standard component boundary.",
+        "$value": "{color.neutral.300}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$description": "Very subtle divider or boundary.",
+        "$value": "{color.neutral.200}"
+      },
+      "strong": {
+        "$type": "color",
+        "$description": "Emphasised boundary used for focus or active states where required.",
+        "$value": "{color.neutral.500}"
+      },
+      "brand": {
+        "$type": "color",
+        "$description": "Primary brand border used for focused or selected controls.",
+        "$value": "{color.primary.300}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$description": "Secondary lavender border used for secondary emphasis.",
+        "$value": "{color.secondary.300}"
+      }
+    },
+
+    "action": {
+      "primary": {
+        "default": {
+          "$type": "color",
+          "$description": "Primary interactive action background.",
+          "$value": "{color.primary.600}"
+        },
+        "hover": {
+          "$type": "color",
+          "$description": "Primary interactive hover state where supported.",
+          "$value": "{color.primary.700}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$description": "Primary interactive pressed state.",
+          "$value": "{color.primary.800}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$description": "Primary action disabled background.",
+          "$value": "{color.neutral.300}"
+        },
+        "foreground": {
+          "$type": "color",
+          "$description": "Text or icon displayed on a primary action.",
+          "$value": "{color.neutral.50}"
+        }
+      },
+
+      "secondary": {
+        "default": {
+          "$type": "color",
+          "$description": "Secondary interactive action background.",
+          "$value": "{color.neutral.100}"
+        },
+        "hover": {
+          "$type": "color",
+          "$description": "Secondary interactive hover state where supported.",
+          "$value": "{color.neutral.200}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$description": "Secondary interactive pressed state.",
+          "$value": "{color.neutral.300}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$description": "Secondary action disabled background.",
+          "$value": "{color.neutral.200}"
+        },
+        "foreground": {
+          "$type": "color",
+          "$description": "Text or icon displayed on a secondary action.",
+          "$value": "{color.neutral.900}"
+        }
+      },
+
+      "ghost": {
+        "default": {
+          "$type": "color",
+          "$description": "Transparent or low-emphasis action foreground.",
+          "$value": "{color.primary.700}"
+        },
+        "hover": {
+          "$type": "color",
+          "$description": "Ghost action hover treatment.",
+          "$value": "{color.primary.50}"
+        },
+        "pressed": {
+          "$type": "color",
+          "$description": "Ghost action pressed treatment.",
+          "$value": "{color.primary.100}"
+        },
+        "foreground": {
+          "$type": "color",
+          "$description": "Ghost action text or icon.",
+          "$value": "{color.primary.700}"
+        },
+        "disabled": {
+          "$type": "color",
+          "$description": "Disabled ghost action foreground.",
+          "$value": "{color.neutral.400}"
+        }
+      }
+    },
+
+    "brand": {
+      "primary": {
+        "$type": "color",
+        "$description": "Primary Arlo brand colour.",
+        "$value": "{color.primary.500}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$description": "Secondary Arlo lavender brand colour.",
+        "$value": "{color.secondary.500}"
+      },
+      "tertiary": {
+        "$type": "color",
+        "$description": "Tertiary Arlo taupe colour for limited contextual use.",
+        "$value": "{color.tertiary.500}"
+      },
+      "accent": {
+        "$type": "color",
+        "$description": "Arlo accent role. Intentionally shares the primary sky-blue family.",
+        "$value": "{color.primary.500}"
+      }
+    },
+
+    "icon": {
+      "default": {
+        "$type": "color",
+        "$description": "Default icon colour.",
+        "$value": "{color.neutral.700}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$description": "Low-emphasis supporting icon colour.",
+        "$value": "{color.neutral.500}"
+      },
+      "muted": {
+        "$type": "color",
+        "$description": "Muted or disabled icon colour.",
+        "$value": "{color.neutral.400}"
+      },
+      "brand": {
+        "$type": "color",
+        "$description": "Primary brand icon colour.",
+        "$value": "{color.primary.600}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$description": "Secondary lavender icon colour.",
+        "$value": "{color.secondary.600}"
+      },
+      "inverse": {
+        "$type": "color",
+        "$description": "Icon colour used on dark or strong coloured surfaces.",
+        "$value": "{color.neutral.50}"
+      }
+    },
+
+    "focus": {
+      "default": {
+        "$type": "color",
+        "$description": "Accessible keyboard or interaction focus indicator.",
+        "$value": "{color.primary.500}"
+      },
+      "subtle": {
+        "$type": "color",
+        "$description": "Subtle focus surface treatment.",
+        "$value": "{color.primary.50}"
+      }
+    },
+
+    "feedback": {
+      "success": {
+        "background": {
+          "$type": "color",
+          "$description": "Soft pastel success background.",
+          "$value": "{color.success.100}"
+        },
+        "default": {
+          "$type": "color",
+          "$description": "Success indicator colour.",
+          "$value": "{color.success.500}"
+        },
+        "strong": {
+          "$type": "color",
+          "$description": "Stronger success treatment where additional emphasis is required.",
+          "$value": "{color.success.700}"
+        },
+        "foreground": {
+          "$type": "color",
+          "$description": "Text used on strong success surfaces.",
+          "$value": "{color.neutral.950}"
+        }
+      },
+
+      "warning": {
+        "background": {
+          "$type": "color",
+          "$description": "Soft pastel warning background.",
+          "$value": "{color.warning.100}"
+        },
+        "default": {
+          "$type": "color",
+          "$description": "Warning indicator colour.",
+          "$value": "{color.warning.500}"
+        },
+        "strong": {
+          "$type": "color",
+          "$description": "Stronger warning treatment where additional emphasis is required.",
+          "$value": "{color.warning.700}"
+        },
+        "foreground": {
+          "$type": "color",
+          "$description": "Text used on strong warning surfaces.",
+          "$value": "{color.neutral.950}"
+        }
+      },
+
+      "error": {
+        "background": {
+          "$type": "color",
+          "$description": "Soft pastel error background.",
+          "$value": "{color.error.100}"
+        },
+        "default": {
+          "$type": "color",
+          "$description": "Error indicator colour.",
+          "$value": "{color.error.500}"
+        },
+        "strong": {
+          "$type": "color",
+          "$description": "Stronger error treatment where additional emphasis is required.",
+          "$value": "{color.error.700}"
+        },
+        "foreground": {
+          "$type": "color",
+          "$description": "Text used on strong error surfaces.",
+          "$value": "{color.neutral.950}"
+        }
+      },
+
+      "info": {
+        "background": {
+          "$type": "color",
+          "$description": "Soft pastel informational background.",
+          "$value": "{color.info.100}"
+        },
+        "default": {
+          "$type": "color",
+          "$description": "Informational indicator colour.",
+          "$value": "{color.info.500}"
+        },
+        "strong": {
+          "$type": "color",
+          "$description": "Stronger informational treatment where additional emphasis is required.",
+          "$value": "{color.info.700}"
+        },
+        "foreground": {
+          "$type": "color",
+          "$description": "Text used on strong informational surfaces.",
+          "$value": "{color.neutral.950}"
+        }
+      }
+    }
+  },
+
+  "spacing": {
+    "component": {
+      "padding-xs": {
+        "$type": "dimension",
+        "$description": "Tight component padding.",
+        "$value": "{spacing.2}"
+      },
+      "padding-sm": {
+        "$type": "dimension",
+        "$description": "Small component padding.",
+        "$value": "{spacing.3}"
+      },
+      "padding-md": {
+        "$type": "dimension",
+        "$description": "Standard component padding.",
+        "$value": "{spacing.4}"
+      },
+      "padding-lg": {
+        "$type": "dimension",
+        "$description": "Generous component padding.",
+        "$value": "{spacing.6}"
+      },
+      "gap-sm": {
+        "$type": "dimension",
+        "$description": "Tight component gap.",
+        "$value": "{spacing.2}"
+      },
+      "gap-md": {
+        "$type": "dimension",
+        "$description": "Standard component gap.",
+        "$value": "{spacing.4}"
+      }
+    },
+
+    "layout": {
+      "page-padding": {
+        "$type": "dimension",
+        "$description": "Standard page edge spacing.",
+        "$value": "{spacing.4}"
+      },
+      "content-gap": {
+        "$type": "dimension",
+        "$description": "Spacing between related content groups.",
+        "$value": "{spacing.6}"
+      },
+      "section-gap": {
+        "$type": "dimension",
+        "$description": "Spacing between major sections.",
+        "$value": "{spacing.8}"
+      }
+    }
+  },
+
+  "radius": {
+    "button": {
+      "$type": "dimension",
+      "$description": "Standard button radius.",
+      "$value": "{radius.md}"
+    },
+    "input": {
+      "$type": "dimension",
+      "$description": "Standard input radius.",
+      "$value": "{radius.md}"
+    },
+    "card": {
+      "$type": "dimension",
+      "$description": "Large surface radius.",
+      "$value": "{radius.lg}"
+    },
+    "badge": {
+      "$type": "dimension",
+      "$description": "Full pill radius.",
+      "$value": "{radius.full}"
+    },
+    "tag": {
+      "$type": "dimension",
+      "$description": "Compact tag radius.",
+      "$value": "{radius.sm}"
+    }
+  },
+
+  "border": {
+    "default": {
+      "$type": "dimension",
+      "$description": "Standard component border width.",
+      "$value": "{borderWidth.default}"
+    },
+    "strong": {
+      "$type": "dimension",
+      "$description": "Strong border width used for emphasis and focus.",
+      "$value": "{borderWidth.strong}"
+    },
+    "subtle": {
+      "$type": "dimension",
+      "$description": "Hairline divider width.",
+      "$value": "{borderWidth.subtle}"
+    }
+  },
+
+  "typography": {
+    "heading": {
+      "h1": {
+        "$type": "typography",
+        "$description": "Primary display heading.",
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.4xl}",
+          "fontWeight": "{typography.fontWeight.bold}",
+          "lineHeight": "{typography.lineHeight.tight}",
+          "letterSpacing": "{typography.letterSpacing.tight}"
+        }
+      },
+      "h2": {
+        "$type": "typography",
+        "$description": "Secondary display heading.",
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.3xl}",
+          "fontWeight": "{typography.fontWeight.bold}",
+          "lineHeight": "{typography.lineHeight.tight}",
+          "letterSpacing": "{typography.letterSpacing.tight}"
+        }
+      },
+      "h3": {
+        "$type": "typography",
+        "$description": "Section heading.",
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.2xl}",
+          "fontWeight": "{typography.fontWeight.semibold}",
+          "lineHeight": "{typography.lineHeight.tight}",
+          "letterSpacing": "{typography.letterSpacing.normal}"
+        }
+      },
+      "h4": {
+        "$type": "typography",
+        "$description": "Small section heading.",
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.xl}",
+          "fontWeight": "{typography.fontWeight.semibold}",
+          "lineHeight": "{typography.lineHeight.normal}",
+          "letterSpacing": "{typography.letterSpacing.normal}"
+        }
+      }
+    },
+
+    "body": {
+      "lg": {
+        "$type": "typography",
+        "$description": "Large body text.",
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.lg}",
+          "fontWeight": "{typography.fontWeight.regular}",
+          "lineHeight": "{typography.lineHeight.normal}",
+          "letterSpacing": "{typography.letterSpacing.normal}"
+        }
+      },
+      "md": {
+        "$type": "typography",
+        "$description": "Default body text.",
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.md}",
+          "fontWeight": "{typography.fontWeight.regular}",
+          "lineHeight": "{typography.lineHeight.normal}",
+          "letterSpacing": "{typography.letterSpacing.normal}"
+        }
+      },
+      "sm": {
+        "$type": "typography",
+        "$description": "Small supporting body text.",
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.sm}",
+          "fontWeight": "{typography.fontWeight.regular}",
+          "lineHeight": "{typography.lineHeight.normal}",
+          "letterSpacing": "{typography.letterSpacing.normal}"
+        }
+      }
+    },
+
+    "label": {
+      "md": {
+        "$type": "typography",
+        "$description": "Standard interface label.",
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.sm}",
+          "fontWeight": "{typography.fontWeight.semibold}",
+          "lineHeight": "{typography.lineHeight.normal}",
+          "letterSpacing": "{typography.letterSpacing.normal}"
+        }
+      },
+      "sm": {
+        "$type": "typography",
+        "$description": "Compact interface label.",
+        "$value": {
+          "fontFamily": "{typography.fontFamily.primary}",
+          "fontSize": "{typography.fontSize.xs}",
+          "fontWeight": "{typography.fontWeight.semibold}",
+          "lineHeight": "{typography.lineHeight.normal}",
+          "letterSpacing": "{typography.letterSpacing.normal}"
+        }
+      }
+    }
+  },
+
+  "shadow": {
+    "none": {
+      "$type": "shadow",
+      "$description": "No elevation.",
+      "$value": "{shadow.none}"
+    },
+    "subtle": {
+      "$type": "shadow",
+      "$description": "Very subtle elevation for restrained surfaces.",
+      "$value": "{shadow.sm}"
+    },
+    "default": {
+      "$type": "shadow",
+      "$description": "Standard restrained elevation.",
+      "$value": "{shadow.md}"
+    },
+    "overlay": {
+      "$type": "shadow",
+      "$description": "Higher elevation for temporary overlays.",
+      "$value": "{shadow.lg}"
+    }
+  },
+
+  "motion": {
+    "duration": {
+      "instant": {
+        "$type": "duration",
+        "$description": "Immediate state change.",
+        "$value": "{motion.duration.instant}"
+      },
+      "fast": {
+        "$type": "duration",
+        "$description": "Fast interaction feedback.",
+        "$value": "{motion.duration.fast}"
+      },
+      "normal": {
+        "$type": "duration",
+        "$description": "Standard interface transition.",
+        "$value": "{motion.duration.normal}"
+      },
+      "moderate": {
+        "$type": "duration",
+        "$description": "Moderate transition for larger interface changes.",
+        "$value": "{motion.duration.moderate}"
+      },
+      "slow": {
+        "$type": "duration",
+        "$description": "Slow transition reserved for deliberate motion.",
+        "$value": "{motion.duration.slow}"
+      }
+    },
+
+    "easing": {
+      "standard": {
+        "$type": "cubicBezier",
+        "$description": "Default Arlo interaction easing.",
+        "$value": "{motion.easing.standard}"
+      },
+      "enter": {
+        "$type": "cubicBezier",
+        "$description": "Easing for elements entering the interface.",
+        "$value": "{motion.easing.enter}"
+      },
+      "exit": {
+        "$type": "cubicBezier",
+        "$description": "Easing for elements leaving the interface.",
+        "$value": "{motion.easing.exit}"
+      },
+      "spring": {
+        "$type": "cubicBezier",
+        "$description": "Playful spring-like easing for tactile interactions.",
+        "$value": "{motion.easing.spring}"
+      }
+    }
+  }
+}

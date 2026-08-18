@@ -1,0 +1,716 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "$description": "Arlo primitive design tokens. Foundational values only. Semantic roles are defined separately in semantics.json.",
+  "color": {
+    "primary": {
+      "50": {
+        "$type": "color",
+        "$description": "Lightest primary tint",
+        "$value": "#F7F9FA"
+      },
+      "100": {
+        "$type": "color",
+        "$description": "Very light primary tint",
+        "$value": "#EFF4F5"
+      },
+      "200": {
+        "$type": "color",
+        "$description": "Light primary tint",
+        "$value": "#DBE6E9"
+      },
+      "300": {
+        "$type": "color",
+        "$description": "Soft primary tint",
+        "$value": "#C1D4D8"
+      },
+      "400": {
+        "$type": "color",
+        "$description": "Light primary",
+        "$value": "#A0BDC4"
+      },
+      "500": {
+        "$type": "color",
+        "$description": "Arlo primary sky blue",
+        "$value": "#5B8E99"
+      },
+      "600": {
+        "$type": "color",
+        "$description": "Strong primary",
+        "$value": "#46727B"
+      },
+      "700": {
+        "$type": "color",
+        "$description": "Dark primary",
+        "$value": "#2A494F"
+      },
+      "800": {
+        "$type": "color",
+        "$description": "Very dark primary",
+        "$value": "#111E21"
+      },
+      "900": {
+        "$type": "color",
+        "$description": "Deepest primary",
+        "$value": "#071012"
+      },
+      "950": {
+        "$type": "color",
+        "$description": "Maximum primary depth",
+        "$value": "#030809"
+      }
+    },
+    "secondary": {
+      "50": {
+        "$type": "color",
+        "$description": "Lightest secondary lavender tint",
+        "$value": "#FBF8FB"
+      },
+      "100": {
+        "$type": "color",
+        "$description": "Very light secondary lavender tint",
+        "$value": "#F5EDF5"
+      },
+      "200": {
+        "$type": "color",
+        "$description": "Light secondary lavender",
+        "$value": "#E9DCE8"
+      },
+      "300": {
+        "$type": "color",
+        "$description": "Soft secondary lavender",
+        "$value": "#D9C6D6"
+      },
+      "400": {
+        "$type": "color",
+        "$description": "Light secondary lavender",
+        "$value": "#C1A9BE"
+      },
+      "500": {
+        "$type": "color",
+        "$description": "Arlo secondary soft lavender",
+        "$value": "#A88FA5"
+      },
+      "600": {
+        "$type": "color",
+        "$description": "Strong secondary lavender",
+        "$value": "#8D718A"
+      },
+      "700": {
+        "$type": "color",
+        "$description": "Dark secondary lavender",
+        "$value": "#6F566B"
+      },
+      "800": {
+        "$type": "color",
+        "$description": "Very dark secondary lavender",
+        "$value": "#4A3847"
+      },
+      "900": {
+        "$type": "color",
+        "$description": "Deepest secondary",
+        "$value": "#2C222B"
+      },
+      "950": {
+        "$type": "color",
+        "$description": "Maximum secondary depth",
+        "$value": "#171216"
+      }
+    },
+    "tertiary": {
+      "50": {
+        "$type": "color",
+        "$description": "Lightest tertiary taupe tint",
+        "$value": "#FAF9F7"
+      },
+      "100": {
+        "$type": "color",
+        "$description": "Very light tertiary taupe tint",
+        "$value": "#F3F0EA"
+      },
+      "200": {
+        "$type": "color",
+        "$description": "Light tertiary taupe",
+        "$value": "#E5E0D7"
+      },
+      "300": {
+        "$type": "color",
+        "$description": "Soft tertiary taupe",
+        "$value": "#D3CCC0"
+      },
+      "400": {
+        "$type": "color",
+        "$description": "Light tertiary taupe",
+        "$value": "#B9B0A1"
+      },
+      "500": {
+        "$type": "color",
+        "$description": "Arlo tertiary soft taupe",
+        "$value": "#9C9282"
+      },
+      "600": {
+        "$type": "color",
+        "$description": "Strong tertiary taupe",
+        "$value": "#817769"
+      },
+      "700": {
+        "$type": "color",
+        "$description": "Dark tertiary taupe",
+        "$value": "#62594D"
+      },
+      "800": {
+        "$type": "color",
+        "$description": "Very dark tertiary taupe",
+        "$value": "#423C34"
+      },
+      "900": {
+        "$type": "color",
+        "$description": "Deepest tertiary",
+        "$value": "#29251F"
+      },
+      "950": {
+        "$type": "color",
+        "$description": "Maximum tertiary depth",
+        "$value": "#16130F"
+      }
+    },
+    "neutral": {
+      "50": {
+        "$type": "color",
+        "$description": "Lightest neutral",
+        "$value": "#FCFBF8"
+      },
+      "100": {
+        "$type": "color",
+        "$description": "Light neutral surface",
+        "$value": "#F6F3ED"
+      },
+      "200": {
+        "$type": "color",
+        "$description": "Soft neutral surface",
+        "$value": "#ECE9E2"
+      },
+      "300": {
+        "$type": "color",
+        "$description": "Light neutral border",
+        "$value": "#DDD9D0"
+      },
+      "400": {
+        "$type": "color",
+        "$description": "Medium-light neutral",
+        "$value": "#C8C3B9"
+      },
+      "500": {
+        "$type": "color",
+        "$description": "Medium neutral",
+        "$value": "#ADA89D"
+      },
+      "600": {
+        "$type": "color",
+        "$description": "Medium-dark neutral",
+        "$value": "#918C82"
+      },
+      "700": {
+        "$type": "color",
+        "$description": "Dark neutral",
+        "$value": "#706C63"
+      },
+      "800": {
+        "$type": "color",
+        "$description": "Very dark neutral",
+        "$value": "#4A4740"
+      },
+      "900": {
+        "$type": "color",
+        "$description": "Primary dark text neutral",
+        "$value": "#292722"
+      },
+      "950": {
+        "$type": "color",
+        "$description": "Deepest neutral",
+        "$value": "#151411"
+      }
+    },
+    "success": {
+      "50": {
+        "$type": "color",
+        "$description": "Lightest pastel success",
+        "$value": "#F4FAF5"
+      },
+      "100": {
+        "$type": "color",
+        "$description": "Pastel success background",
+        "$value": "#EAF6ED"
+      },
+      "200": {
+        "$type": "color",
+        "$description": "Light pastel success",
+        "$value": "#D5EBDD"
+      },
+      "300": {
+        "$type": "color",
+        "$description": "Soft pastel success border",
+        "$value": "#BEDFC8"
+      },
+      "400": {
+        "$type": "color",
+        "$description": "Soft success",
+        "$value": "#9FC9AD"
+      },
+      "500": {
+        "$type": "color",
+        "$description": "Arlo pastel success",
+        "$value": "#82B992"
+      },
+      "600": {
+        "$type": "color",
+        "$description": "Stronger pastel success",
+        "$value": "#639D75"
+      },
+      "700": {
+        "$type": "color",
+        "$description": "Dark pastel success",
+        "$value": "#4D7F5C"
+      },
+      "800": {
+        "$type": "color",
+        "$description": "Very dark success",
+        "$value": "#365B41"
+      },
+      "900": {
+        "$type": "color",
+        "$description": "Deep success",
+        "$value": "#243E2C"
+      },
+      "950": {
+        "$type": "color",
+        "$description": "Deepest success",
+        "$value": "#142419"
+      }
+    },
+    "error": {
+      "50": {
+        "$type": "color",
+        "$description": "Lightest pastel error",
+        "$value": "#FCF6F5"
+      },
+      "100": {
+        "$type": "color",
+        "$description": "Pastel error background",
+        "$value": "#F8EAE8"
+      },
+      "200": {
+        "$type": "color",
+        "$description": "Light pastel error",
+        "$value": "#F1D5D2"
+      },
+      "300": {
+        "$type": "color",
+        "$description": "Soft pastel error border",
+        "$value": "#E6BCB8"
+      },
+      "400": {
+        "$type": "color",
+        "$description": "Soft error",
+        "$value": "#D89D98"
+      },
+      "500": {
+        "$type": "color",
+        "$description": "Arlo pastel error",
+        "$value": "#C9827E"
+      },
+      "600": {
+        "$type": "color",
+        "$description": "Stronger pastel error",
+        "$value": "#AD6865"
+      },
+      "700": {
+        "$type": "color",
+        "$description": "Dark pastel error",
+        "$value": "#8D504D"
+      },
+      "800": {
+        "$type": "color",
+        "$description": "Very dark error",
+        "$value": "#663936"
+      },
+      "900": {
+        "$type": "color",
+        "$description": "Deep error",
+        "$value": "#472724"
+      },
+      "950": {
+        "$type": "color",
+        "$description": "Deepest error",
+        "$value": "#291715"
+      }
+    },
+    "warning": {
+      "50": {
+        "$type": "color",
+        "$description": "Lightest pastel warning",
+        "$value": "#FCFAF3"
+      },
+      "100": {
+        "$type": "color",
+        "$description": "Pastel warning background",
+        "$value": "#F7F0D9"
+      },
+      "200": {
+        "$type": "color",
+        "$description": "Light pastel warning",
+        "$value": "#EEE1B8"
+      },
+      "300": {
+        "$type": "color",
+        "$description": "Soft pastel warning border",
+        "$value": "#E2D09A"
+      },
+      "400": {
+        "$type": "color",
+        "$description": "Soft warning",
+        "$value": "#D1BA70"
+      },
+      "500": {
+        "$type": "color",
+        "$description": "Arlo pastel warning",
+        "$value": "#BEA45C"
+      },
+      "600": {
+        "$type": "color",
+        "$description": "Stronger pastel warning",
+        "$value": "#A58B47"
+      },
+      "700": {
+        "$type": "color",
+        "$description": "Dark pastel warning",
+        "$value": "#806B35"
+      },
+      "800": {
+        "$type": "color",
+        "$description": "Very dark warning",
+        "$value": "#5D4D27"
+      },
+      "900": {
+        "$type": "color",
+        "$description": "Deep warning",
+        "$value": "#40351C"
+      },
+      "950": {
+        "$type": "color",
+        "$description": "Deepest warning",
+        "$value": "#251F10"
+      }
+    },
+    "info": {
+      "50": {
+        "$type": "color",
+        "$description": "Lightest pastel info",
+        "$value": "#F4F8FC"
+      },
+      "100": {
+        "$type": "color",
+        "$description": "Pastel info background",
+        "$value": "#E8F0F8"
+      },
+      "200": {
+        "$type": "color",
+        "$description": "Light pastel info",
+        "$value": "#D2E1EF"
+      },
+      "300": {
+        "$type": "color",
+        "$description": "Soft pastel info border",
+        "$value": "#B8D0E4"
+      },
+      "400": {
+        "$type": "color",
+        "$description": "Soft info",
+        "$value": "#97B9D4"
+      },
+      "500": {
+        "$type": "color",
+        "$description": "Arlo pastel info",
+        "$value": "#7FA4C2"
+      },
+      "600": {
+        "$type": "color",
+        "$description": "Stronger pastel info",
+        "$value": "#668BA9"
+      },
+      "700": {
+        "$type": "color",
+        "$description": "Dark pastel info",
+        "$value": "#506F89"
+      },
+      "800": {
+        "$type": "color",
+        "$description": "Very dark info",
+        "$value": "#3A5267"
+      },
+      "900": {
+        "$type": "color",
+        "$description": "Deep info",
+        "$value": "#293B4A"
+      },
+      "950": {
+        "$type": "color",
+        "$description": "Deepest info",
+        "$value": "#18252F"
+      }
+    }
+  },
+  "spacing": {
+    "0": {
+      "$type": "dimension",
+      "$value": "0px"
+    },
+    "1": {
+      "$type": "dimension",
+      "$value": "4px"
+    },
+    "2": {
+      "$type": "dimension",
+      "$value": "8px"
+    },
+    "3": {
+      "$type": "dimension",
+      "$value": "12px"
+    },
+    "4": {
+      "$type": "dimension",
+      "$value": "16px"
+    },
+    "5": {
+      "$type": "dimension",
+      "$value": "20px"
+    },
+    "6": {
+      "$type": "dimension",
+      "$value": "24px"
+    },
+    "7": {
+      "$type": "dimension",
+      "$value": "28px"
+    },
+    "8": {
+      "$type": "dimension",
+      "$value": "32px"
+    },
+    "10": {
+      "$type": "dimension",
+      "$value": "40px"
+    },
+    "12": {
+      "$type": "dimension",
+      "$value": "48px"
+    },
+    "16": {
+      "$type": "dimension",
+      "$value": "64px"
+    }
+  },
+  "radius": {
+    "none": {
+      "$type": "dimension",
+      "$value": "0px"
+    },
+    "sm": {
+      "$type": "dimension",
+      "$description": "Small controls and compact UI",
+      "$value": "6px"
+    },
+    "md": {
+      "$type": "dimension",
+      "$description": "Standard controls and components",
+      "$value": "10px"
+    },
+    "lg": {
+      "$type": "dimension",
+      "$description": "Larger surfaces and containers",
+      "$value": "16px"
+    },
+    "xl": {
+      "$type": "dimension",
+      "$description": "Large featured surfaces",
+      "$value": "24px"
+    },
+    "full": {
+      "$type": "dimension",
+      "$description": "Pills and fully rounded controls",
+      "$value": "999px"
+    }
+  },
+  "borderWidth": {
+    "none": {
+      "$type": "dimension",
+      "$value": "0px"
+    },
+    "subtle": {
+      "$type": "dimension",
+      "$description": "Hairline separation where supported",
+      "$value": "0.5px"
+    },
+    "default": {
+      "$type": "dimension",
+      "$description": "Standard component boundary",
+      "$value": "1px"
+    },
+    "strong": {
+      "$type": "dimension",
+      "$description": "Focus and deliberate emphasis",
+      "$value": "2px"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": {
+        "$type": "fontFamily",
+        "$description": "Primary Arlo typeface",
+        "$value": "Manrope"
+      }
+    },
+    "fontSize": {
+      "xs": {
+        "$type": "dimension",
+        "$value": "12px"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "14px"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "16px"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "18px"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "20px"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "24px"
+      },
+      "3xl": {
+        "$type": "dimension",
+        "$value": "28px"
+      },
+      "4xl": {
+        "$type": "dimension",
+        "$value": "32px"
+      }
+    },
+    "fontWeight": {
+      "regular": {
+        "$type": "fontWeight",
+        "$value": 400
+      },
+      "medium": {
+        "$type": "fontWeight",
+        "$value": 500
+      },
+      "semibold": {
+        "$type": "fontWeight",
+        "$value": 600
+      },
+      "bold": {
+        "$type": "fontWeight",
+        "$value": 700
+      }
+    },
+    "lineHeight": {
+      "tight": {
+        "$type": "number",
+        "$value": 1.2
+      },
+      "normal": {
+        "$type": "number",
+        "$value": 1.5
+      },
+      "relaxed": {
+        "$type": "number",
+        "$value": 1.625
+      }
+    },
+    "letterSpacing": {
+      "tight": {
+        "$type": "dimension",
+        "$value": "-0.02em"
+      },
+      "normal": {
+        "$type": "dimension",
+        "$value": "0em"
+      },
+      "wide": {
+        "$type": "dimension",
+        "$value": "0.02em"
+      }
+    }
+  },
+  "shadow": {
+    "none": {
+      "$type": "shadow",
+      "$value": "none"
+    },
+    "sm": {
+      "$type": "shadow",
+      "$description": "Very subtle elevation",
+      "$value": "0 1px 3px rgba(41, 39, 34, 0.08)"
+    },
+    "md": {
+      "$type": "shadow",
+      "$description": "Standard restrained elevation",
+      "$value": "0 4px 12px rgba(41, 39, 34, 0.10)"
+    },
+    "lg": {
+      "$type": "shadow",
+      "$description": "Higher elevation for temporary overlays",
+      "$value": "0 8px 24px rgba(41, 39, 34, 0.12)"
+    }
+  },
+  "motion": {
+    "duration": {
+      "instant": {
+        "$type": "duration",
+        "$value": "0ms"
+      },
+      "fast": {
+        "$type": "duration",
+        "$value": "120ms"
+      },
+      "normal": {
+        "$type": "duration",
+        "$value": "200ms"
+      },
+      "moderate": {
+        "$type": "duration",
+        "$value": "280ms"
+      },
+      "slow": {
+        "$type": "duration",
+        "$value": "400ms"
+      }
+    },
+    "easing": {
+      "standard": {
+        "$type": "cubicBezier",
+        "$value": "cubic-bezier(0.2, 0, 0, 1)"
+      },
+      "enter": {
+        "$type": "cubicBezier",
+        "$value": "cubic-bezier(0, 0, 0.2, 1)"
+      },
+      "exit": {
+        "$type": "cubicBezier",
+        "$value": "cubic-bezier(0.4, 0, 1, 1)"
+      },
+      "spring": {
+        "$type": "cubicBezier",
+        "$value": "cubic-bezier(0.34, 1.56, 0.64, 1)"
+      }
+    }
+  }
+}
